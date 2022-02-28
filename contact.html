@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Translator</title>
+    <link rel="stylesheet" href="/resources/css/contact.css">
+    <link rel="shortcut icon" href="/resources/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!----------Header----------------------->
+
+    <header id="Head">
+        <nav class="navbar">
+          <div class="brand-title"><a id="title"href="startseite.html">Code Translator</a></div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <a href="startseite.html"><li>Startseite</li></a>
+              <a class="link" href="translator.html"><li>Übersetzer</li></a>
+              <a class="link" href="app.html"><li id="header_li">Apps</li></a>
+              <a class="link" href="account.html"><li><img id="Konto" src="/resources/img/icon/Konto.png" alt="Konto"></li></a>
+              <a class="link" href="contact.html"><li><img id="Kontakt" src="/resources/img/icon/Kontakt.png" alt="Kontakt"></li></a>
+              <a class="link" herf="#">
+                <li>
+                <label id="dark-switch"></label>
+               </li></a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <!----------Contact----------------------->
+
+    <section id="section" class="Contact">
+
+        <form method="post" action="contact.php" >
+            <h2 id="heading">Kontaktformular</h2>
+            <div id="name">
+                <input type="text" name="Name" placeholder="Gib deinen Namen an" required>
+            </div>
+            <div id="email">
+                <input type="email" name="Email" placeholder="Gib deine E-mail an" required>
+            </div>
+            <p class="antispam">Bitte dieses Feld nicht ausfüllen <input type="text" name="url"></p>
+            <div id="sub">
+                <select name="Betreff" id="subject">
+                    <option value="technical issue">Technisches Problem</option>
+                    <option value="question"> Frage zum Produkt</option>
+                    <option value="feedback">Feedeback</option>
+                </select>
+            </div>
+            <div id="vl"></div>
+            <div id="message">
+                <textarea placeholder="Deine Nachricht an uns..." required name="Nachricht" id="msg" cols="30" rows="10"></textarea>
+              </div>
+
+            <button id="send" type="submit" name="submit">Absenden</button>
+        </form>
+    
+    </section>
+
+    <!----------Footer----------------------->
+    
+    <footer id="Footer">
+        <p>
+            <a id="eins" href="Impressum.html">Impressum</a>
+            <br>
+            <a id="zwei" href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+        </p>
+    </footer>
+    
+    
+    <!----------Scripts----------------------->
+    <script src="/resources/js/darkmode.js"></script>
+
+</body>
+</html>

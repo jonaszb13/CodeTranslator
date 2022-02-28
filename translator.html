@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Translator</title>
+    <link rel="stylesheet" href="/resources/css/translator.css">
+    <link rel="shortcut icon" href="/resources/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!----------Header----------------------->
+
+    <header id="Head">
+      <nav class="navbar">
+        <div class="brand-title"><a id="title"href="startseite.html">Code Translator</a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <a href="startseite.html"><li>Startseite</li></a>
+            <a class="link" href="translator.html"><li>Übersetzer</li></a>
+            <a class="link" href="app.html"><li id="header_li">Apps</li></a>
+            <a class="link" href="account.html"><li><img id="Konto" src="/resources/img/icon/Konto.png" alt="Konto"></li></a>
+            <a class="link" href="contact.html"><li><img id="Kontakt" src="/resources/img/icon/Kontakt.png" alt="Kontakt"></li></a>
+            <a class="link" herf="#">
+              <li>
+              <label id="dark-switch"></label>
+             </li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <!----------Translator----------------------->
+
+    <section id="section" class="TranslatorCT">
+        <div id="codein">
+          <h2>Füge hier dein Code ein</h2>
+          <select name="codetype" id="">
+            <div class="slide">
+              <option value="" disabled selected>Wähle deine Programmiersprache</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="c++">C++</option>
+              <option value="c#">C#</option>
+              <option value="python">Python</option>
+              <option value="php">PHP</option>
+            </div>
+          </select>
+          <div class="codefield">
+            <textarea  id="codeintrans" spellcheck="false" placeholder="Hier kommt dein Code rein..." required></textarea>
+          </div>
+        </div>
+  
+        <div>
+          <button id="transalet" type="button" name="transbutton" onclick="sync()">Übersetzen</button>
+        </div>
+  
+        <div id="codeout">
+          <h2>Das ist die Bedeutung</h2>
+          <select name="language" class="codeoutselect">
+            <div class="slide">
+              <option value="" disabled selected>Wähle deine Sprache aus</option>
+              <option value="english">English</option>
+              <option value="german">Deutsch</option>
+            </div>
+          </select>
+          <div class="codefield">
+            <textarea readonly id="codeouttrans" spellcheck="false" placeholder="Hier kommt dein Code rein..." required></textarea>        </div>
+        </div>
+      </section>
+
+    <!----------Footer----------------------->
+
+    <footer id="Footer">
+        <p>
+            <a id="eins" href="Impressum.html">Impressum</a>
+            <br>
+            <a id="zwei" href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+        </p>
+    </footer>
+
+
+    <!----------Scripts----------------------->
+    
+    <script src="/resources/js/darkmode.js"></script>
+    <script src="/resources/js/textarea.js"></script>
+    <script src="/resources/js/sync.js"></script>
+
+</body>
+</html>
