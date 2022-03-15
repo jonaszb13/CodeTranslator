@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#linkCreateAccount').addEventListener('click', e => {
         sessionStorage.setItem('form', 'reg');
-        e.preventDefault();
+        e.preventDefault();  
         loginForm.classList.add('form--hidden');
         createAccount.classList.remove('form--hidden');
     })
