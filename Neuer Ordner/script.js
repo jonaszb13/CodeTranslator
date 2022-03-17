@@ -9,6 +9,17 @@ function test() {
     xmlhttp.send();
 }
 
+function phptest() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById('phpout').innerText = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("Get", "get.php", true);
+    xmlhttp.send();
+}
+
 
 //Store Login or Registration Form in session Storage
 
