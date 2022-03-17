@@ -29,7 +29,6 @@ function logorreg () {
     }
 }
 
-
 //Show Error messages
 
 function setFormMessage(formElement, type, message) {
