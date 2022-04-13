@@ -97,6 +97,9 @@ $stmd->close();
 	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
 	//echo 'Could not prepare statement!';
 }
+
+echo "account created";
+
 $con->close();
 ?>
 
