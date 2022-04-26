@@ -15,6 +15,7 @@ $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_
 
 tables - accounts; language
 
+---------------------------------------
 
 $_POST not working
 email is not avalible in php file for validation process

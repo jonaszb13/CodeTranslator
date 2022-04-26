@@ -1,6 +1,5 @@
 function testfortag(){
 
-
     //Finds out which language is selected
     const which = document.getElementById('codetype').value;
     let getType = which;

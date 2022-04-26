@@ -9,6 +9,7 @@ $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_
 
 echo "test";
 
+$femail = $_POST['email'];
 
 if (mysqli_connect_errno()) {
 	$conerr = "Failed to connect to MySQL: " .mysqlite_connect_error();
@@ -29,12 +30,12 @@ if (mysqli_connect_errno()) {
 //}
 
 
-if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if (filter_var($femail, FILTER_VALIDATE_EMAIL)) {
 	echo "Email is not valid123";
 	header('Content-Type: application/json');
 	exit();
 }
-echo $_POST['email'], " eig. Email " ;
+echo $femail, " eig. Email " ;
 echo "test2.0";
 
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['password2']) || empty($_POST['email'])) {
