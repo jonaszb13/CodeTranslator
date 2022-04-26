@@ -20,3 +20,7 @@ tables - accounts; language
 $_POST not working
 email is not avalible in php file for validation process
 other echo work just fine
+
+$_POST and $_GET request have to be in the same file/webpage to work
+<https://hosting166467.ae84c.netcup.net/resources/php/register.php?email=joe@example.com>
+direct access to php file - "?" defines the input value "joe@example.com" for the upcomming variable "email" that is echoed on the webpage

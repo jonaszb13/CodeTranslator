@@ -9,7 +9,6 @@ $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_
 
 echo "test";
 
-$femail = $_POST['email'];
 
 if (mysqli_connect_errno()) {
 	$conerr = "Failed to connect to MySQL: " .mysqlite_connect_error();
@@ -35,7 +34,13 @@ if (filter_var($femail, FILTER_VALIDATE_EMAIL)) {
 	header('Content-Type: application/json');
 	exit();
 }
-echo $femail, " eig. Email " ;
+
+if (isset($_GET['email'])) {
+	echo "Echo test - ". $_GET['email']. " test ";
+} else {
+	echo "Echo test - keine Email ";
+}
+
 echo "test2.0";
 
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['password2']) || empty($_POST['email'])) {
@@ -102,5 +107,5 @@ $stmd->close();
 echo "account created";
 
 $con->close();
-?>j
+?>
 
