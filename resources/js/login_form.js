@@ -207,7 +207,9 @@ function ajaxrequest() {
             document.getElementById('btnerrormessage').innerHTML = xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET", "register.php", true);
+    xmlhttp.open("GET", "./resources/php/register.php", true);
     xmlhttp.send();
-    console.log("request send");
 }
+
+console.log("request send");
+

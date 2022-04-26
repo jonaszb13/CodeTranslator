@@ -29,12 +29,12 @@ if (mysqli_connect_errno()) {
 //}
 
 
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-	echo $_POST['email'];
+if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 	echo "Email is not valid123";
 	header('Content-Type: application/json');
 	exit();
 }
+echo $_POST['email'], " eig. Email " ;
 echo "test2.0";
 
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['password2']) || empty($_POST['email'])) {

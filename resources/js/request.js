@@ -1,39 +1,33 @@
-/*function onClicked(){
-    let domInput = document.getElementById('input');
-    let domOutput = document.getElementById('output');
-    let content = domInput.value;
-
-    if (content == "A"){
-        console.log("1");
-        domOutput.innerHTML = "Sie haben: " +content+ " eingegeben";
-
-    }
-
-    else if(content == "B"){
-        console.log("2");
-        domOutput.innerHTML = "Sie haben: " +content+ " eingegeben"
-    }
-
-    else{
-        domOutput.innerHTML = "Sie haben etwas falsches eingegeben";
-    }
-};  
-*/
-
 function testfortag(){
 
 
-    let domInput1 = document.getElementById('codetype');
-    let lang = element.options[element.selectedIndex].value;
+    //Finds out which language is selected
+    const which = document.getElementById('codetype').value;
+    let getType = which;
 
-    alert("Sie haben"+lang+"ausgewählt");
-}
+    if( getType == "html"){
+        console.log("1");
+    }
 
-    /*let domInput = document.getElementById('input').value;
+    else if( getType == "css"){
+        console.log("2");
+    }
+
+    else if( getType == "javascript"){
+        console.log("3");
+    }
+
+    else if( getType == "python"){
+        console.log("4");
+    }
+
+    //Finds out which tag must be declared 
+
+    let domInput = document.getElementById('input').value;
     let domOutput = document.getElementById('output');
     let getTag = domInput;
     let tag = getTag;
-
+    
     switch(getTag){
         case "id":
             domOutput.innerHTML = "Sie haben: " + tag + " eingegeben";
@@ -80,4 +74,3 @@ function testfortag(){
             break;
     };
 };
-*/

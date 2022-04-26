@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 testEmail is not valid123
 
 testtest2.0account created
@@ -15,3 +14,8 @@ $DATABASE_NAME = 'k174849_test';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
 tables - accounts; language
+
+
+$_POST not working
+email is not avalible in php file for validation process
+other echo work just fine

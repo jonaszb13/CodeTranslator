@@ -46,16 +46,16 @@
 
       <div id="settings"> 
 
-        <button id="translate"  type="button" onclick="testforta"> analysieren </button>
+        <button id="translate"  type="button" onclick="testfortag();"> analysieren </button>
         <br>
 
         <div id="language">
-          <select name="codetype" id="codetype" onchange="testfortag();">
-              <option value="" disabled selected>Wählem Sie Iher Programiersprahe</option>
-              <option value="html">Html</option>
-              <option value="css">Css</option>
-              <option value="javascript">JavaScript</option>
-              <option value="python">Python</option>         
+          <select name="codetype" id="codetype" >
+              <option value="-" disabled selected>Wählem Sie Iher Programiersprahe</option>
+              <option id="html" value="html">html</option>
+              <option id="css" value="css">Css</option>
+              <option id="javascript" value="javascript">JavaScript</option>
+              <option id="python" value="python">Python</option>         
 
           </select>
         </div>
