@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*function onClicked(){
     let domInput = document.getElementById('input');
     let domOutput = document.getElementById('output');
