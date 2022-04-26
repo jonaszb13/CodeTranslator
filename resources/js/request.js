@@ -1,7 +1,5 @@
 function testfortag(){
 
-    alert("Jonas und Sina");
-
     //Finds out which language is selected
     const which = document.getElementById('codetype').value;
     let getType = which;

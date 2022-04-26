@@ -577,7 +577,6 @@ header label.darkmode_label:before {
     min-height: 250px;
     min-width: 60%;
     max-height: 650px;
-    border-color: #20d2f4;
     border-radius: 10px;
     font-size: 26px;
 }
