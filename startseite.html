@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -42,21 +40,13 @@
     <!----------Section----------------------->
     <section id="section">
       
-      <div class="c-input">
-        <textarea name="CodeInput" id="Codefield" cols="30" rows="10"></textarea>
-      </div>
-
-      <div class="c-output">
-        <div id="Trans-Button">
-          <button class="btn-add">Add New</button>
-        </div>
-
-        <div class="analysis-fields"> 
-          <h2>New Containers</h2>
-          <div id="div-container"></div>
-        </div>
-
-      </div>
+      <div id="get-it">
+        <textarea placeholder="Type your Code in" spellcheck="false" id="input"></textarea>
+        <button id="translate" type="button" onclick="testfortag()"> start </button>
+        <br>
+        <p id="output"></p>
+    </div>
+      
     </section>
 
 
@@ -74,8 +64,9 @@
 
     <script src="/resources/js/darkmode.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="/resources/js/sync.js"></script>
-    <script src="/resources/js/translator.js"></script>
+    <script src="/resources/js/responsivenav.js"></script>
+    <script src="/resources/js/request.js"></script>
+    <script src="/resources/js/textarea.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>

@@ -1,3 +1,9 @@
+testEmail is not valid123
+
+testtest2.0account created
+
+---------------------------------------
+
 database connection
 
 $DATABASE_HOST = '10.35.232.77';

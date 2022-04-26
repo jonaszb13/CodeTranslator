@@ -567,17 +567,35 @@ header label.darkmode_label:before {
 }
 /*-----Section-----------*/
 
-.c-input{
-    position:absolute;
-    margin-top: 150px;
-    margin-left: 10%;
-}
-
-#Codefield{
+#input{
     resize: none;
     overflow: auto;
-    width: 550px;
-    height: 350px;
+    min-height: 250px;
+    min-width: 60%;
+    margin-right: 30%;
+    max-height: 900px;
+}
+
+#get-it button{
+    background-color: #402b62; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#get-it button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#get-it{
+    margin-top: 8%;
 }
 
 /*--------Footer---------*/
