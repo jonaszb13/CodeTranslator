@@ -21,7 +21,15 @@
 */
 
 function testfortag(){
-    let domInput = document.getElementById('input').value;
+
+
+    let domInput1 = document.getElementById('codetype');
+    let lang = element.options[element.selectedIndex].value;
+
+    alert("Sie haben"+lang+"ausgewählt");
+}
+
+    /*let domInput = document.getElementById('input').value;
     let domOutput = document.getElementById('output');
     let getTag = domInput;
     let tag = getTag;
@@ -72,3 +80,4 @@ function testfortag(){
             break;
     };
 };
+*/
