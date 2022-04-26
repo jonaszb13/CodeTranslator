@@ -101,5 +101,5 @@ $stmd->close();
 echo "account created";
 
 $con->close();
-?>
+?>j
 

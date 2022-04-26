@@ -283,12 +283,12 @@ button {
     color: rgb(78, 78, 78);
     font-size: 24px;
     background-color: rgb(219, 219, 219);
-    transition: 0.5s;
+    transition: 0.3s;
     margin-top: -50px;
 }
 
 button:hover{
-    background-color: #b9b9b9;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /*--------Codein---------*/
