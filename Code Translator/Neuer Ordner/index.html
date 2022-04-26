@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Test Ajax Request</h1>
+
+    <p id="outputfield"></p>
+
+    <button onclick="test()">test</button>
+
+    <p id="phpout"></p>
+
+    <button onclick="phptest()">PHPTest</button>
+
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Einloggen</h1>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Benutername oder E-Mail">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" id="password" autofocus placeholder="Passwort">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__message form__message--error"></div>
+            <button class="form__button" type="submit">Bestätigen</button>
+            <p class="form__text">
+                <a href="/Account/Wiedumm.html" class="form__link">Passwort vergessen?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="" id="linkCreateAccount">Noch keinen Account? Erstelle einen</a>
+            </p>
+        </form>
+        
+        <form class="form form--hidden" id="createAccount" action="register.php" method="post" >
+            <h1 class="form__title">Account erstellen</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" name="username" class="form__input" autofocus placeholder="Benutername">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" id="signupEmail" name="email" class="form__input" autofocus placeholder="E-Mail Adresse">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="PassEntry" name="password" class="form__input" autofocus placeholder="Passwort">
+                <i class="bi bi-eye-slash" id="togglePassword1"></i>
+                <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="second_password" name="password2" class="form__input" autofocus placeholder="Passwort bestätigen">
+                <i class="bi bi-eye-slash" id="togglePassword2"></i>
+                <div id="secpass" class="form__input-error-message"></div>
+            </div>
+            <div>
+                <button class="form__button" id="button" type="submit">Erstellen</button>
+                <span id="btnerrormessage" class="form__input-error-message"></span>
+            </div>
+            <p class="form__text">
+                <a class="form__link" href="" id="linkLogin">Schon einen Account? Log dich jetzt ein</a>
+            </p>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

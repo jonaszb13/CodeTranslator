@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Translator</title>
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="shortcut icon" href="/resources/img/logo.png">
+    
+</head>
+<body>
+
+    <!----------Header----------------------->
+
+    <header id="Head">
+      <nav class="navbar">
+        <div class="brand-title"><a id="title"href="startseite.html">Code Translator</a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <a href="startseite.html"><li>Startseite</li></a>
+            <a class="link" href="translator.html"><li>Übersetzer</li></a>
+            <a class="link" href="app.html"><li id="header_li">Apps</li></a>
+            <a class="link" href="account.html"><li><img id="Konto" src="/resources/img/icon/Konto.png" alt="Konto"></li></a>
+            <a class="link" href="contact.html"><li><img id="Kontakt" src="/resources/img/icon/Kontakt.png" alt="Kontakt"></li></a>
+            <a class="li nk" herf="#">
+              <li>
+              <label id="dark-switch"  onclick="AddNew"></label>
+             </li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+
+    <!----------Section----------------------->
+    <section id="section">
+      
+      <div id="get-it">
+        <textarea placeholder="Type your Code in" spellcheck="false" id="input"></textarea>
+        <button id="translate" type="button" onclick="testfortag()"> start </button>
+        <br>
+        <p id="output"></p>
+    </div>
+      
+    </section>
+
+
+    <!----------Footer----------------------->
+
+    <footer id="Footer">
+        <p>
+          <a id="eins" href="Impressum.html">Impressum</a>
+          <br>
+          <a id="zwei" href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+        </p>
+    </footer>
+
+    <!----------Scripts----------------------->
+
+    <script src="/resources/js/darkmode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="/resources/js/responsivenav.js"></script>
+    <script src="/resources/js/request.js"></script>
+    <script src="/resources/js/textarea.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,636 @@
+/*
+font-family: 'Nunito', sans-serif
+font-family: 'Outfit', sans-serif;
+font-family: 'Baloo Bhaijaan 2', cursive;
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Nunito:wght@300&family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Outfit:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+  
+body {
+    background-color: #eceff1;
+}
+
+.darkmode_body {
+    background-color:rgb(43, 43, 43);
+}
+
+section {
+    min-height: 100%;
+    background-color: #eceff1;
+}
+
+.darkmode_section {
+    background-color: rgb(43, 43, 43);
+}
+   
+a {
+    text-decoration: none;
+}
+  
+li {
+    list-style: none;
+}
+  
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 34px;
+    color: #9c9c9c;
+}
+    
+/*--------Überschriften( H )--------*/
+
+/*--------Header---------*/
+
+header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    min-height: 10%;
+    max-height: 15%;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+    color: rgb(78, 78, 78);
+}
+
+.darkmode_header {
+    background:rgb(17, 17, 17);
+    box-shadow: 0 1px 3px rgb(82, 79, 79);
+    color: white;
+}
+
+.brand-title {
+    width: 330px;
+    float: left;
+    margin: 13px 0 0 50px;
+    display: flex;
+    margin-top: 35px;
+    font-size: 28px;
+}
+
+#title{
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+}
+
+.brand-title:hover {
+    opacity: 0.9;
+    transition: 0.6s;
+}
+
+.navbar-links {
+    float: right;
+    margin: 15px 50px 0 0;
+}
+
+.darkmode_header nav ul li {
+    color: #fff !important;
+}
+
+.navbar-links ul li{
+    display: flex;
+    color: rgb(78, 78, 78);
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px
+
+}
+
+.navbar-links a {
+    list-style: none;
+    font-size: 28px;
+}
+
+.navbar-links ul li {
+    font-size: 26px;
+}
+
+navbar-links ul li {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    background: white;
+    color: #9c9c9c;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    padding-top: 5px;
+    transition: 0.3s;
+}
+
+.toggle-button {
+    color: rgb(78, 78, 78);
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    color: rgb(78, 78, 78);
+    height: 3px;
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    float: right;
+}
+
+header label{
+    position: absolute;
+    width: 48px;
+    height: 26px;
+    right: 20px;
+    top: 42px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+header label:before{
+    position:absolute;
+    content: "";
+    width: 23px;
+    height: 24px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #000000;
+    transition: 0.6s;
+}
+
+header label.darkmode_label:before {
+    left: 24px;
+    background: #fff;
+}
+
+@media (max-width: 800px) {
+
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(78, 78, 78);
+}
+
+.toggle-button {
+    display: flex;
+    margin-top: 25px;
+}
+
+.navbar-links {
+    display: none;
+    width: 100%;
+    float: left;
+    border-radius: 5%;
+    font-size: 50px;
+}     
+
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    display: grid;
+    float: left;
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+.navbar-links ul li {
+    color: 0;
+    margin-top: 50px;
+    font-size: 48px;
+}
+
+.navbar-links ul li a {
+    color: black;
+    margin-top: 100px;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+
+header img{
+    height: 35px;
+}
+
+header label{
+    width: 48px;
+    height: 28px;
+    margin-right: 12%;
+    margin-top: -2%;
+}
+
+header label:before{
+    position:absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #000000;
+    transition: 0.6s;
+}
+
+header label.darkmode_label:before {
+    left: 24px;
+    background: #fff;
+}
+
+.brand-title {
+    float: left;
+    margin-left: 5px;
+    display: flex;
+    margin-top: 35px;
+    font-size: 25px;
+}
+}
+
+@media (min-width: 801px) {
+
+    header {
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        min-height: 10%;
+        max-height: 15%;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding-left: 0;
+        padding-right: 0;
+        color: rgb(78, 78, 78);
+    }
+    
+    .darkmode_header {
+        background:rgb(17, 17, 17);
+        box-shadow: 0 1px 3px rgb(82, 79, 79);
+        color: white;
+    }
+    
+    .brand-title {
+        font-size: 28px;
+        width: 330px;
+        float: left;
+        margin: 20px 0 0 50px;
+        display: flex;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    
+    #title{
+        color: rgb(78, 78, 78);
+        text-decoration: none;
+        font-size: 28px;
+    }
+    
+    .brand-title:hover {
+        opacity: 0.9;
+        transition: 0.6s;
+    }
+    
+    .navbar-links {
+        margin-top: 15px;
+        
+    }
+    
+    .darkmode_header nav ul li {
+        color: #fff !important;
+    }
+    
+    .navbar-links ul li{
+        display: flex;
+        color: rgb(78, 78, 78);
+        float: left;
+        margin-left: 12px;
+        margin-right: 12px
+    
+    }
+    
+    .navbar-links a {
+        list-style: none;
+        font-size: 28px;
+    }
+    
+    .navbar-links ul li {
+        font-size: 26px;
+    }
+    
+    navbar-links ul li {
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    
+    .navbar-links li a {
+        display: block;
+        margin-top: -5px;
+        text-decoration: none;
+        background: white;
+        color: #9c9c9c;
+        padding: 1rem;
+    }
+
+    .navbar-links img {
+        margin-top: 5px;
+    }
+    
+    .navbar-links li:hover {
+        padding-top: 5px;
+        transition: 0.3s;
+    }
+    
+    .toggle-button {
+        color: rgb(78, 78, 78);
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        color: rgb(78, 78, 78);
+        height: 3px;
+        width: 100%;
+        background-color: rgb(78, 78, 78);
+        float: right;
+    }
+    
+    header label{
+        position: absolute;
+        margin-top: -5px;
+        width: 48px;
+        height: 26px;
+        right: 20px;
+        top: 42px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    
+    header label:before{
+        position:absolute;
+        content: "";
+        width: 23px;
+        height: 24px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #000000;
+        transition: 0.6s;
+    }
+    
+    header label.darkmode_label:before {
+        left: 24px;
+        background: #fff;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        min-height: 10%;
+        max-height: 15%;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding-left: 0;
+        padding-right: 0;
+        color: rgb(78, 78, 78);
+    }
+    
+    .darkmode_header {
+        background:rgb(17, 17, 17);
+        box-shadow: 0 1px 3px rgb(82, 79, 79);
+        color: white;
+    }
+    
+    .brand-title {
+        font-size: 28px;
+        width: 330px;
+        float: left;
+        margin: 20px 0 0 50px;
+        display: flex;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    
+    #title{
+        color: rgb(78, 78, 78);
+        text-decoration: none;
+        font-size: 28px;
+    }
+    
+    .brand-title:hover {
+        opacity: 0.9;
+        transition: 0.6s;
+    }
+    
+    .navbar-links {
+        margin-top: 15px;
+        
+    }
+    
+    .darkmode_header nav ul li {
+        color: #fff !important;
+    }
+    
+    .navbar-links ul li{
+        display: flex;
+        color: rgb(78, 78, 78);
+        float: left;
+        margin-left: 12px;
+        margin-right: 12px
+    
+    }
+    
+    .navbar-links a {
+        list-style: none;
+        font-size: 28px;
+    }
+    
+    .navbar-links ul li {
+        font-size: 26px;
+    }
+    
+    navbar-links ul li {
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    
+    .navbar-links li a {
+        display: block;
+        margin-top: -5px;
+        text-decoration: none;
+        background: white;
+        color: #9c9c9c;
+        padding: 1rem;
+    }
+
+    .navbar-links img {
+        margin-top: 5px;
+    }
+    
+    .navbar-links li:hover {
+        padding-top: 5px;
+        transition: 0.3s;
+    }
+    
+    .toggle-button {
+        color: rgb(78, 78, 78);
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        color: rgb(78, 78, 78);
+        height: 3px;
+        width: 100%;
+        background-color: rgb(78, 78, 78);
+        float: right;
+    }
+    
+    header label{
+        position: absolute;
+        margin-top: -5px;
+        width: 48px;
+        height: 26px;
+        right: 20px;
+        top: 42px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    
+    header label:before{
+        position:absolute;
+        content: "";
+        width: 23px;
+        height: 24px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #000000;
+        transition: 0.6s;
+    }
+    
+    header label.darkmode_label:before {
+        left: 24px;
+        background: #fff;
+    }
+}
+/*-----Section-----------*/
+
+#input{
+    resize: none;
+    overflow: auto;
+    min-height: 250px;
+    min-width: 60%;
+    margin-right: 30%;
+    max-height: 900px;
+}
+
+#get-it button{
+    background-color: #402b62; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#get-it button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#get-it{
+    margin-top: 8%;
+}
+
+/*--------Footer---------*/
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+
+.darkmode_footer {
+    background-color: rgb(17, 17, 17);
+}
+  
+footer a {
+    float: left;
+    margin-left: 10%;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    box-sizing: content-box;
+}
+
+.darkmode_footer a {
+    color: #fff;
+}
+  
+footer p {
+    box-sizing: content-box;
+    margin-top: 20px;
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+}
+  
+footer a:first-child {
+    margin-top: 10px;
+}
