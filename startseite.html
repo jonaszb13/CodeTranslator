@@ -42,27 +42,35 @@
       
       <div id="get-it">
         <textarea maxlength="150" placeholder="Type your Code in" spellcheck="false" id="input"></textarea>
+
         <div id="the-count_comment">
           <span id="current_comment">0</span>
           <span id="maximum_comment"> / 150</span>
         </div>
-        <br>
-
-      <div id="settings"> 
-
-        <button id="translate"  type="button" onclick="testfortag();"> analysieren </button>
-        <br>
-
-        <div id="language">
-          <select name="codetype" id="codetype" required>
+          
+          <div class="error">
+            <p id="nolanguage"></p>
+          </div>
+        
+        
+        <div id="setings"> 
+                  
+          <button id="translate"  type="button" onclick="testfortag();"> analysieren </button>
+          <br>
+          
+          <div id="language">
+            <select name="codetype" id="codetype" required onchange="testforlang();">
               <option value="-" disabled selected>Wählem Sie Iher Programiersprahe</option>
               <option id="html" value="html">html</option>
               <option id="css" value="css">Css</option>
               <option id="javascript" value="javascript">JavaScript</option>
-              <option id="python" value="python">Python</option>         
+              <option id="python" value="python">Python</option>      
+            </select>
+          </div>
 
-          </select>
-        </div>
+          <div class="error">
+            <p id="nolanguage"></p>
+          </div>
 
       </div>
 

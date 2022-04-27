@@ -1,4 +1,4 @@
-/*
+ /*
 font-family: 'Nunito', sans-serif
 */
 
@@ -165,8 +165,8 @@ header label{
 header label:before{
     position:absolute;
     content: "";
-    width: 23px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     left: 1px;
     top: 1px;
     border-radius: 50%;
@@ -186,6 +186,7 @@ header label.darkmode_label:before {
     flex-direction: column;
     align-items: flex-start;
     color: rgb(78, 78, 78);
+    background-color: #000000;
 }
 
 .toggle-button {
@@ -208,6 +209,7 @@ header label.darkmode_label:before {
     float: left;
     margin-top: 25px;
     font-size: 50px;
+    background-color: rgb(87, 87, 87);
 }
 
 .navbar-links ul li {
@@ -231,7 +233,7 @@ header img{
 
 header label{
     width: 48px;
-    height: 28px;
+    height: 26px;
     margin-right: 12%;
     margin-top: -2%;
 }
