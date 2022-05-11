@@ -5,7 +5,7 @@ const enableDarkmode = () => {
 
     //body
     document.body.classList.add('darkmode_body');
-    
+     
     //header
     document.querySelector('#Head').classList.add('darkmode_header');
     document.querySelector('#dark-switch').classList.add('darkmode_label');

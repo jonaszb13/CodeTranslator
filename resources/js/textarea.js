@@ -1,3 +1,4 @@
+// 
 const textarea = document.getElementById("input");
 textarea.addEventListener("keyup", e =>{
   textarea.style.height = "62px";
